@@ -28,37 +28,39 @@ export function Footer() {
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
               <Box
-                component="img"
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=50&h=50&fit=crop&crop=faces"
-                alt="Profile"
-                sx={{
-                  width: 50,
-                  height: 50,
-                  borderRadius: '50%'
-                }}
+              component="img"
+              src="/public/profile.jpeg"
+              alt="Profile"
+              sx={{
+                width: 50,
+                height: 50,
+                borderRadius: '50%'
+              }}
               />
               <Typography
-                sx={{
-                  color: '#1a365d',
-                  fontWeight: 600,
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 1
-                }}
+              sx={{
+                color: '#1a365d',
+                fontWeight: 600,
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1
+              }}
               >
-                Akash <Heart className="h-5 w-5 text-orange-500" />
+              Akash <Heart className="h-5 w-5 text-orange-500" />
               </Typography>
             </Box>
             <Typography
-              component={Link}
-              to="#"
+              component="a"
+              href="https://github.com/abdurrahman-akash/CPU-Scheduling-Simulator"
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{
                 color: '#64748b',
                 textDecoration: 'none',
                 '&:hover': { color: '#2563eb' }
               }}
             >
-              Contact
+              Source Code
             </Typography>
           </Grid>
 
